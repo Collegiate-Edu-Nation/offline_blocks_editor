@@ -27,13 +27,13 @@
  * callback.
  */
 function fetchJavaScriptForHardware(callback) {
-  if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+  /*if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
     // html/js is in a browser, loaded as an http:// URL.
     fetchJavaScriptForHardwareViaHttp(callback);
-  } else if (window.location.protocol === 'file:') {
+  } else if (window.location.protocol === 'file:') {*/
     // html/js is in a browser, loaded as an file:// URL.
     fetchJavaScriptForHardwareViaFile(callback);
-  }
+  //}
 }
 
 function getConfigurationName(callback) {
@@ -52,7 +52,7 @@ function getConfigurationName(callback) {
 // The following are generated dynamically in ProgrammingModeServer.fetchJavaScriptForServer():
 // URI_HARDWARE
 // PARAM_NAME
-
+/*
 function fetchJavaScriptForHardwareViaHttp(callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', URI_HARDWARE, true);
@@ -88,7 +88,7 @@ function getConfigurationNameViaHttp(callback) {
   };
   xhr.send();
 }
-
+*/
 //..........................................................................
 // Code used when html/js is in a browser, loaded as a file:// URL.
 
