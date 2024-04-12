@@ -4,17 +4,19 @@ Offline blocks editor from the FTC WebUI.
 Deployed from docs/ via GitHub Pages for remote development and (eventual) convenient access to example blocks at: https://camdenboren.github.io/offline_blocks_editor/
 
 <details>
-<summary>Remote Development</summary>
+<summary><b>Remote Development</b></summary>
+
 All blocks-related functionality can be utilized through the deployed website: https://camdenboren.github.io/offline_blocks_editor/
 
 Note: none of these changes are saved automatically (beyond temporary user-side cookies), so any created blocks must be downloaded and managed by the user/team if you'd like to save your work.
 </details>
 
 <details>
-<summary>Local Development</summary>
+<summary><b>Local Development</b></summary>
+
 git clone this repo
 
-If you're loading the site through your browser (so it's using file URLs), simply open src/index.html, where all blocks-related functionality can be utilized (though I see errors when attempting to load example code, so I don't recommend this).
+If you're loading the site through your browser (so it's using file URLs), simply open src/index.html, where all blocks-related functionality can be utilized (though I see errors when attempting to load example code on Firefox-based browsers).
 
 If you're loading the site via http URLs (like Live Preview in VSCode), then open docs/index.html, where all blocks-related functionality can be utilized.
 
@@ -22,7 +24,8 @@ Note: these changes should be stored locally on your computer (though downloadin
 </details>
 
 <details>
-<summary>Workflow</summary>
+<summary><b>Workflow</b></summary>
+
 Though the recommended development environment makes it unintuitive to version control and/or collaborate on block code, it does provide basic support for downloading, uploading, and modifying blocks.
 
 Download: In the blocks page, check the OpModes you'd like to download and click the right-most button on the sub-menu (Download Selected OpModes) to download the .blk file.
@@ -33,6 +36,17 @@ Collaborate: I'd recommend checking your team .blk files into a github repo to e
 </details>
 
 <details>
-<summary>Architecture</summary>
+<summary><b>Architecture</b></summary>
+
 src/ is simply the extracted offline editor from the WebUI. Due to the conditional statements in blocks/hardware_utils.js and blocks/project_utils.js checking for file vs http URLs (and calling the protocols' corresponding functions), however, most functionality breaks when attempting to deploy this as a static site over http without access to the robot controller. This is resolved by commenting out all of the conditional logic and http-specific functions responsible for this functionality, forcing the use of the files even when served via http. This is the modified code found in docs/.
+</details>
+
+<details>
+<summary><b>Configuration</b></summary>
+
+Motors: 0 = rightFront; 1 = rightBack; 2 = leftFront; 3 = leftBack;  
+Servos: 0 = claw; 1 = shooter;  
+Digital Devices: 0 = touchSensor;  
+I2C: Bus 0 = colorSensor;  
+USB: Webcam 1;
 </details>

@@ -6,7 +6,7 @@ function getBlkFiles() {
 }
 
 function getOfflineConfigurationName() {
-  return 'Ccity';
+  return 'Default';
 }
 
 function getSampleNamesJson() {
