@@ -44,8 +44,8 @@ src/ is simply the extracted offline editor from the WebUI. Due to the condition
 <details>
 <summary><b>Configuration</b></summary>
 
-Motors: 0 = rightFront; 1 = rightBack; 2 = leftFront; 3 = leftBack;  
-Servos: 0 = claw; 1 = shooter;  
+Motors: 0 = frontLeft; 1 = frontRight; 2 = backLeft; 3 = backRight;  
+Servos: 0 = claw; 1 = lift;  
 Digital Devices: 0 = touchSensor;  
 I2C: Bus 0 = colorSensor;  
 USB: Webcam 1;
