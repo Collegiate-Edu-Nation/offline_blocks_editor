@@ -38,7 +38,7 @@ Collaborate: I'd recommend checking your team .blk files into a github repo to e
 <details>
 <summary><b>Architecture</b></summary>
 
-src/ is simply the extracted offline editor from the WebUI. Due to the conditional statements in blocks/hardware_utils.js and blocks/project_utils.js checking for file vs http URLs (and calling the protocols' corresponding functions), however, most functionality breaks when attempting to deploy this as a static site over http without access to the robot controller. This is resolved by commenting out all of the conditional logic and http-specific functions responsible for this functionality, forcing the use of the files even when served via http. This is the modified code found in docs/.
+src/ is simply the extracted offline editor from the WebUI. Due to the conditional statements in blocks/hardware_util.js and blocks/project_util.js checking for file vs http URLs (and calling the protocols' corresponding functions), however, most functionality breaks when attempting to deploy this as a static site over http without access to the robot controller. This is resolved by commenting out all of the conditional logic and http-specific functions responsible for this functionality, forcing the use of the files even when served via http. This is the modified code found in docs/.
 </details>
 
 <details>
