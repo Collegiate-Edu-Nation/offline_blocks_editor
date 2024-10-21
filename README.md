@@ -1,7 +1,7 @@
 # offline_blocks_editor
 Offline blocks editor from the FTC WebUI. 
 
-Deployed from docs/ via GitHub Pages for remote development and (eventual) convenient access to example blocks at: https://camdenboren.github.io/offline_blocks_editor/
+Deployed from docs/ via GitHub Pages for remote development and (eventual) convenient access to example blocks at: https://collegiate-edu-nation.github.io/offline_blocks_editor/
 
 <details>
 <summary><b>Remote Development</b></summary>
