@@ -6,6 +6,8 @@ Offline blocks editor from the FTC WebUI, deployed for painless remote developme
 
 Deployed at https://collegiate-edu-nation.github.io/offline_blocks_editor/
 
+Includes configured hardware devices and example code
+
 Ideal for
 * Collaboration
 * Instruction
