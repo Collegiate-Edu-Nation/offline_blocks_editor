@@ -1,5 +1,5 @@
 # offline_blocks_editor
-![Static Badge](https://img.shields.io/badge/FTC_SDK-10.1-blue)
+![Static Badge](https://img.shields.io/badge/FTC_SDK-11.0-blue)
 ![Static Badge](https://img.shields.io/badge/Platforms-Linux,_macOS,_Windows-green)
 
 Offline blocks editor from the FTC WebUI, deployed for painless remote development
