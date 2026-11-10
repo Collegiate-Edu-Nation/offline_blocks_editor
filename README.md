@@ -16,6 +16,11 @@ Ideal for
 - Prototyping
 - Homework
 
+> [!IMPORTANT]
+> This repo has been archived due to a lack of engagement and capacity. The latest deployment should
+> remain active for the foreseeable future, but users should not expect any further updates (e.g.,
+> for upstream SDK changes).
+
 ## Remote Development
 
 All basic blocks functionality can be utilized through the deployed site
